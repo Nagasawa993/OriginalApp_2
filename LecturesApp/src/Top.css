@@ -1,0 +1,249 @@
+/* Top.css - TOPページのスタイルシート */
+
+/* 全体のコンテナ */
+.top-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background: #09771d;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ヘッダーセクション */
+.top-header {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.top-title {
+  font-size: 3.5rem;
+  margin: 0 0 15px 0;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: -1px;
+}
+
+.top-subtitle {
+  font-size: 1.3rem;
+  margin: 0;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* メインコンテンツ */
+.top-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.top-content {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ウェルカムセクション */
+.welcome-section {
+  margin-bottom: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  margin: 0 0 20px 0;
+  color: #fff;
+}
+
+.welcome-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* 機能説明セクション */
+.features-section {
+  margin-bottom: 50px;
+}
+
+.features-title {
+  font-size: 2rem;
+  margin: 0 0 30px 0;
+  color: #fff;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+/* クリック可能な用語集カードのスタイル */
+.feature-card:first-child {
+  cursor: pointer;
+}
+
+.feature-card:first-child:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.feature-card h4 {
+  font-size: 1.3rem;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+/* スタートボタンセクション */
+.start-section {
+  margin-top: 50px;
+}
+
+.start-button {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.start-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #ff5252, #d63031);
+}
+
+.start-button:active {
+  transform: translateY(-1px);
+}
+
+.start-button-text {
+  font-size: 1.2rem;
+}
+
+.start-button-icon {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+.start-button:hover .start-button-icon {
+  transform: translateX(5px);
+}
+
+/* フッター */
+.top-footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-footer p {
+  margin: 0;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .top-title {
+    font-size: 2.5rem;
+  }
+  
+  .top-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .welcome-title {
+    font-size: 2rem;
+  }
+  
+  .welcome-description {
+    font-size: 1.1rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .start-button {
+    padding: 18px 35px;
+    font-size: 1.1rem;
+  }
+  
+  .welcome-section {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-header {
+    padding: 40px 20px 30px;
+  }
+  
+  .top-title {
+    font-size: 2rem;
+  }
+  
+  .welcome-title {
+    font-size: 1.7rem;
+  }
+  
+  .start-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+}
