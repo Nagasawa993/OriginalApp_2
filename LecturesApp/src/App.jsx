@@ -1,6 +1,4 @@
-// App.jsx - ルーティング管理
-import React from "react";
-import { BrowserRouter as Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Top from "./Top";
 import Quiz from "./Quiz";
 import "./App.css";
