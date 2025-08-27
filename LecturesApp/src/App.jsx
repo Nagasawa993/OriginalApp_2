@@ -7,7 +7,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter basename="/OriginalApp_2">   // basenameを追記
       <div className="app">
         <Routes>
           {/* TOPページのルート */}
@@ -20,7 +20,7 @@ const App = () => {
           <Route path="*" element={<Top />} />
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 };
 
